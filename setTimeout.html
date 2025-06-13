@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout()</title>
+    <script>
+        // console.log("first");
+        // console.log("two");
+
+        // setTimeout(() => {
+        //     console.log("hello");
+        // }, 2000);
+
+        // console.log("three");
+        // console.log("four");
+
+        //     function first() {
+        //         console.log("First");
+        //     }
+
+        //     function second() {
+        //         console.log("Second");
+        //     }
+
+        //     function hello() {
+        //         console.log("Hello after 2 seconds");
+        //     }
+
+        //     function third() {
+        //         console.log("Third");
+        //     }
+
+        //     function fourth() {
+        //         console.log("Fourth");
+        //     }
+
+        //     first();
+        //     second();
+        //     setTimeout(hello, 2000);
+        //     third();
+        //     fourth();
+
+        // </script>
+<!-- 
+    <script>
+        function getData(`, getNextData) {
+            setTimeout(() => {
+                console.log("data", dataID);
+                if (getNextData) {
+                    getNextData();
+                }
+            }, 2000);
+        }
+
+        getData(1, () => {
+            getData(2, () => {
+                getData(3, () => {
+                    console.log("All data fetched");
+                });
+            });
+        });
+
+        </script> -->
+
+        <script>
+    function askPassword(nextStep) {
+        setTimeout(() => {
+            console.log("Enter your password");
+            if (nextStep) {
+                nextStep();
+            }
+        }, 2000);
+    }
+
+    function askEmail() {
+        setTimeout(() => {
+            console.log("Enter your email ID");
+            console.log("Login successful!");
+        }, 2000);
+    }
+
+    // Start login process
+    function loginPlatform() {
+        askPassword(() => {
+            askEmail();
+        });
+    }
+
+    loginPlatform();
+</script>
+
+        </script>
+</head>
+
+<body>
+    <h2>SetTimeout() Function</h2>
+</body>
+
+</html>
