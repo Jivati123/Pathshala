@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> FOr IN loop </h2>
+</body>
+<script>
+    const car = {
+        brand: "Tata",
+        model: "Safari",
+        year: 2025
+    }
+
+    for (let i in car) {
+        console.log("key:", i, "value:", car[i]);
+    }
+
+    const keyvaluePair = Object.entries(car);
+    console.log(keyvaluePair);
+
+    for (i = 0; i < keyvaluePair.length; i++) {
+        console.log(keyvaluePair[i][0], keyvaluePair[i][1]);
+    }
+
+     //_________________________________________________
+
+    // const family = {
+    //     bhai: "TATA AIG",
+    //     Papa: "Business",
+    //     Mom: "Housewife",
+    //     I: "Habuild"
+    // }
+
+    // for (let i in family) {
+    //     console.log("key=", i, "vaule=", family[i]);
+    // }
+
+    //_________________________________________________
+
+    let family = ["TATA AIG", "Business" , "HouseWife" , "Habuild"];
+    for (let i of family) {
+        console.log(i);
+    }
+
+    const colors = ["red", "green", "blue"];
+    for (let color of colors) {
+        console.log(color);
+    }
+
+     //_________________________________________________
+
+</script>
+
+</html>
