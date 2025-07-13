@@ -1,0 +1,1 @@
+{"mappings":"AAAA,QAAQ,GAAG,CAAC;AACZ,QAAQ,GAAG,CAAC","sources":["main.js"],"sourcesContent":["console.log(\"hello\");\r\nconsole.log(React);"],"names":[],"version":3,"file":"Day4_NodeJs.c4775257.js.map","sourceRoot":"/__parcel_source_root/"}
